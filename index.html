@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="left">
+                <img src="images/netflix-logo.png" alt="">
+            </div>
+            <div class="right">
+                <select name="language" class="language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+                <button type="submit" onclick="openPopup()">Sign In</button>
+            </div>
+        </nav>
+
+        <div class="popup" id="popup">
+            <h1>Enter Details</h1>
+            <form action="index.php" method="post">
+                <label >User Name:</label>
+                <input type="text" placeholder="Enter User Name" name="name"><br>
+                <label>Password:</label>
+                 <input type="password" placeholder="Enter Password" name="password"><br>
+                <input type="submit" value="Enter" class="submit">
+            </form>
+        </div>
+
+        <div class="title">
+            <div class="content">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <form >
+                    <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div class="email">
+                        <input type="email" name="email" placeholder="Email address">
+                        <button onclick="openPopup()"><a href="#" >Get Started  ></a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
